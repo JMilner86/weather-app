@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    padding: 40px;
+    background-image: linear-gradient(to right, lightblue, darkblue);
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    height: 70px;
+    font-family: sans-serif;
+}
+
+h2 { 
+    padding: none;
+    /* margin: 7px 0 10px 0; */
+}
+
+#title {
+    margin: 30px 0;
+}
+
+#inputValue {
+    padding: 7px;
+    width: 300px;
+    border-radius: 5px;
+
+}
+
+.button{
+    margin: 20px 0;
+    padding: 7px 30px;
+    width: 300px;
+    background-color: #22A0DF;
+    color: white;
+    border-radius: 5px;
+
+}
+
+
+.jumbo-current {
+    height: 375px;
+    width: 100%;
+    border: solid black 2px;
+    margin: 10px 0 30px 0;
+    padding: 30px;
+}
+
+#searchCities {
+    margin: 10px 0 0 50px;
+}
+
+#currentCity {
+    margin: 10px 0 0 50px;
+}
+
+#five-day {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-left: 0px;
+}
+
+#past-searches {
+    padding: 40px 0;
+    list-style: none;
+}
+.past{
+margin-bottom: 2px;
+background-color: gainsboro;
+color: black;
+width: 300px;
+padding:7px;
+border-radius: 5px;
+text-align: center;
+}
+
+.card {
+    background-color: #034A6C;
+    color: white;
+    height: 350px;
+    width: 200px;
+}
+
+hr {
+    width: 300px;
+}
+
+br {
+    margin-top: 15px;
+}

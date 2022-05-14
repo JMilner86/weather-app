@@ -17,7 +17,7 @@ searchBtn.addEventListener('click', function (e) {
     e.preventDefault()
     var inputValue = document.getElementById('inputValue').value;
     fiveDay(inputValue);
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue + '&units=imperial&APPID=0b106405e1fea6fced972a3d3945745f')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue + '&units=imperial&APPID=1e8ac9e4257408df6be0cd2a26452853')
         .then(response => response.json())
         .then(data => {
             var date = moment().format("MMMM Do YYYY, h:mm a");
@@ -46,7 +46,7 @@ searchBtn.addEventListener('click', function (e) {
 
 function history() {
     inputValue = pastCity.textContent
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue + '&units=imperial&APPID=0b106405e1fea6fced972a3d3945745f')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue + '&units=imperial&APPID=1e8ac9e4257408df6be0cd2a26452853')
         .then(response => response.json())
         .then(data => {
             var date = moment().format("MMMM Do YYYY, h:mm a");
@@ -63,7 +63,7 @@ function history() {
 };
 
 function displayUvIndex(lat, lon) {
-    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&APPID=0b106405e1fea6fced972a3d3945745f")
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&APPID=1e8ac9e4257408df6be0cd2a26452853")
         .then(response => response.json())
         .then(data => {
             uvIndex.innerText = 'UV Index: ' + data['current']['uvi'];
@@ -74,7 +74,7 @@ function displayUvIndex(lat, lon) {
 }
 
 function fiveDay(city) {
-    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial&APPID=0b106405e1fea6fced972a3d3945745f')
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial&APPID=1e8ac9e4257408df6be0cd2a26452853')
         .then(response => response.json())
         .then(data => {
             // console.log(data)
