@@ -1,6 +1,5 @@
 
 // API key 0b106405e1fea6fced972a3d3945745f
-
 var searchBtn = document.querySelector('.search');
 var displayDate = document.getElementById('displayDate');
 var temp = document.getElementById('temp');
@@ -47,7 +46,7 @@ searchBtn.addEventListener('click', function (e) {
 
 function history() {
     inputValue = pastCity.textContent
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue + '&units=imperial&APPID=f9d491be2c04cabd7a30f6d0ce1b0f1e')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q=' + inputValue + '&units=imperial&APPID=0b106405e1fea6fced972a3d3945745f')
         .then(response => response.json())
         .then(data => {
             var date = moment().format("MMMM Do YYYY, h:mm a");
@@ -64,7 +63,7 @@ function history() {
 };
 
 function displayUvIndex(lat, lon) {
-    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&APPID=f9d491be2c04cabd7a30f6d0ce1b0f1e")
+    fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + lat + "&lon=" + lon + "&APPID=0b106405e1fea6fced972a3d3945745f")
         .then(response => response.json())
         .then(data => {
             uvIndex.innerText = 'UV Index: ' + data['current']['uvi'];
@@ -75,7 +74,7 @@ function displayUvIndex(lat, lon) {
 }
 
 function fiveDay(city) {
-    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial&APPID=f9d491be2c04cabd7a30f6d0ce1b0f1e')
+    fetch('https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&units=imperial&APPID=0b106405e1fea6fced972a3d3945745f')
         .then(response => response.json())
         .then(data => {
             // console.log(data)

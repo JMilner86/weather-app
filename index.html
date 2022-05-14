@@ -1,59 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="./assets/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Weather Dashboard</title>
 </head>
-<body class="flex-column">
-    <header>
-        <h2 class="page-title">Weather Dashboard</h2>
-    </header>
-    
-    <body>
-    <div class="user-input">
-        <input class="input">
-    </div>
-    
-    <section class="current-conditions">
-        <h3>Current conditions</h3>
-    
-    </section>
-    
-    <section class="future-forecast">
-        <h3>5-day forecast</h3>
-    
-    </section>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-</body>
-</html>
-
-
-<header>
-    <h2 class="page-title">Weather Dashboard</h2>
-</header>
 
 <body>
-<div class="user-input">
-    <input class="input">
-</div>
+    <header>
+        <h2>Weather Dashboard</h2>
+    </header>
+    <main class="row">
+        <div class="col-2" id="searchCities">
+            <h3>Search for a city:</h3>
+            <div class="input">
+                <input id="inputValue" type="text" placeholder="Enter a city" />
+                <input id="searchBtn" type="submit" value="Submit" class="button search"></input>
+                <hr>
+            </div>
+            <div>
+                <ul id="past-searches"></ul>
+            </div>
+        </div>
+        <div class="col-9" id=currentCity>
+            <section class="jumbo-current">
+                <h3 id="displayDate"></h3>
+                <img id="img" src="">
+                
+                <p id="temp"></p>
+                <p id="windSpeed"></p>
+                <p id="humidity"></p>
+                <p id="uvIndex"></p>
+            </section>
 
-<section class="current-conditions">
-    <h3>Current conditions</h3>
+            <h3 id="title">5-Day Forecast</h3>
 
-</section>
+            <div class="row" id="five-day">
+                <div class="card col-2"></div>
+                <div class="card col-2"></div>
+                <div class="card col-2"></div>
+                <div class="card col-2"></div>
+                <div class="card col-2"></div>
+            </div>
 
-<section class="future-forecast">
-    <h3>5-day forecast</h3>
 
-</section>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="assets/js/weather.js"></script>
+</body>
+
+</html>
