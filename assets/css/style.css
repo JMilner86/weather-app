@@ -6,6 +6,7 @@
 
 body {
     padding: none;
+    background-color: bisque;
 }
 
 header {
@@ -14,17 +15,17 @@ header {
     align-items: center;
     margin: none;
     padding: 40px;
-    background-image: linear-gradient(to right, lightblue, darkblue);
+    background-image: linear-gradient(to right, rgb(219, 91, 12), royalblue);
     text-align: center;
     font-size: 30px;
-    color: white;
-    height: 70px;
-    font-family: sans-serif;
+    color: black;
+    font-weight: bolder;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 { 
     padding: none;
-    /* margin: 7px 0 10px 0; */
 }
 
 #title {
@@ -42,8 +43,9 @@ h2 {
     margin: 20px 0;
     padding: 7px 30px;
     width: 300px;
-    background-color: #22A0DF;
+    background-color: navy;
     color: white;
+    font-weight: bolder;
     border-radius: 5px;
 
 }
@@ -55,6 +57,7 @@ h2 {
     border: solid black 2px;
     margin: 10px 0 30px 0;
     padding: 30px;
+    background-color: rgb(133, 133, 177);
 }
 
 #searchCities {
@@ -80,6 +83,7 @@ h2 {
 margin-bottom: 2px;
 background-color: gainsboro;
 color: black;
+font-weight: bold;
 width: 300px;
 padding:7px;
 border-radius: 5px;
