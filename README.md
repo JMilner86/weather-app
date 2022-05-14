@@ -7,4 +7,4 @@
 
 
 
-Deployed URL: 
+Deployed URL: https://jmilner86.github.io/weather-app/
